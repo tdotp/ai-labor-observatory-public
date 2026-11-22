@@ -1,0 +1,156 @@
+{
+  "capa_a_base_roles": {
+    "creatividad_diseno": {
+      "queries": [
+        "creative director",
+        "graphic designer",
+        "ui designer",
+        "ux designer",
+        "art director",
+        "creative strategist",
+        "design director",
+        "brand designer",
+        "motion designer",
+        "product designer"
+      ],
+      "description": "Creative and design professionals focused on visual communication and brand expression"
+    },
+    "contenido_social": {
+      "queries": [
+        "social media manager",
+        "content creator",
+        "social content specialist",
+        "community manager",
+        "content strategist",
+        "social media strategist",
+        "content producer",
+        "digital content manager",
+        "community strategist",
+        "social listening specialist"
+      ],
+      "description": "Professionals managing social platforms, community engagement, and content distribution"
+    },
+    "marketing_growth": {
+      "queries": [
+        "growth marketer",
+        "performance marketer",
+        "marketing manager",
+        "digital marketer",
+        "product marketer",
+        "demand generation manager",
+        "demand gen specialist",
+        "marketing operations",
+        "growth strategist",
+        "acquisition specialist"
+      ],
+      "description": "Growth-focused professionals driving customer acquisition and retention"
+    },
+    "pr_comunicaciones": {
+      "queries": [
+        "pr manager",
+        "public relations specialist",
+        "communications manager",
+        "corporate communications",
+        "public affairs",
+        "communications strategist",
+        "media relations",
+        "press officer",
+        "communications director",
+        "stakeholder relations"
+      ],
+      "description": "Communications and public relations professionals managing brand narrative"
+    },
+    "estrategia_cuentas": {
+      "queries": [
+        "account manager",
+        "account executive",
+        "account strategist",
+        "relationship manager",
+        "client success manager",
+        "account development",
+        "strategic account manager",
+        "customer success manager",
+        "account planning",
+        "partnership manager"
+      ],
+      "description": "Account and relationship professionals managing client/partner success"
+    }
+  },
+  "capa_b_ai_enrichment": {
+    "ai_tools": {
+      "queries": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "perplexity",
+        "copilot",
+        "grok",
+        "mistral",
+        "llama",
+        "openai",
+        "anthropic"
+      ],
+      "description": "Large language model tools and AI assistants"
+    },
+    "ai_visual_generation": {
+      "queries": [
+        "midjourney",
+        "dall-e",
+        "adobe firefly",
+        "stable diffusion",
+        "runway ml",
+        "ideogram",
+        "leonardo ai",
+        "generative ai",
+        "ai image generation",
+        "ai art"
+      ],
+      "description": "Visual content generation and image synthesis AI tools"
+    },
+    "ai_techniques": {
+      "queries": [
+        "prompting",
+        "prompt engineering",
+        "prompt design",
+        "agentic workflow",
+        "ai automation",
+        "ai workflow",
+        "multi-agent",
+        "rag",
+        "fine-tuning",
+        "retrieval augmented generation"
+      ],
+      "description": "Techniques and methods for leveraging AI effectively"
+    },
+    "ai_video_audio": {
+      "queries": [
+        "elevenlabs",
+        "synthesia",
+        "descript",
+        "adobe podcast",
+        "voice cloning",
+        "ai video generation",
+        "text to speech",
+        "video synthesis",
+        "ai voice",
+        "deepgram"
+      ],
+      "description": "Audio and video generation and processing AI tools"
+    },
+    "ai_content_operations": {
+      "queries": [
+        "ai copywriting",
+        "content automation",
+        "ai editing",
+        "ai content generation",
+        "ai workflow automation",
+        "ai integration",
+        "api automation",
+        "zapier ai",
+        "make automation",
+        "workflow optimization"
+      ],
+      "description": "AI-powered content creation and operational automation"
+    }
+  }
+}

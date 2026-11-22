@@ -1,0 +1,313 @@
+{
+  "hard_skills": {
+    "description": "Technical and specialized competencies requiring specific training or tools",
+    "skills": [
+      {
+        "name": "Graphic Design",
+        "category": "design",
+        "tools": ["Figma", "Adobe Creative Suite", "Sketch"]
+      },
+      {
+        "name": "UI/UX Design",
+        "category": "design",
+        "tools": ["Figma", "Adobe XD", "Framer"]
+      },
+      {
+        "name": "Motion Design",
+        "category": "design",
+        "tools": ["After Effects", "Cinema 4D", "Blender"]
+      },
+      {
+        "name": "Video Production",
+        "category": "content",
+        "tools": ["Premiere Pro", "Final Cut Pro", "DaVinci Resolve"]
+      },
+      {
+        "name": "Photography",
+        "category": "content",
+        "tools": ["Lightroom", "Photoshop", "Capture One"]
+      },
+      {
+        "name": "Copywriting",
+        "category": "content",
+        "tools": []
+      },
+      {
+        "name": "SEO",
+        "category": "marketing",
+        "tools": ["SEMrush", "Ahrefs", "Moz"]
+      },
+      {
+        "name": "PPC/SEM",
+        "category": "marketing",
+        "tools": ["Google Ads", "Meta Ads Manager", "LinkedIn Campaign Manager"]
+      },
+      {
+        "name": "Social Media Management",
+        "category": "social",
+        "tools": ["Hootsuite", "Buffer", "Sprout Social"]
+      },
+      {
+        "name": "Analytics & Data Analysis",
+        "category": "marketing",
+        "tools": ["Google Analytics", "Tableau", "Looker", "Power BI"]
+      },
+      {
+        "name": "Email Marketing",
+        "category": "marketing",
+        "tools": ["HubSpot", "Mailchimp", "ConvertKit"]
+      },
+      {
+        "name": "CRM Management",
+        "category": "operations",
+        "tools": ["Salesforce", "HubSpot", "Pipedrive"]
+      },
+      {
+        "name": "Marketing Automation",
+        "category": "marketing",
+        "tools": ["HubSpot", "Marketo", "Pardot"]
+      },
+      {
+        "name": "HTML/CSS",
+        "category": "technical",
+        "tools": []
+      },
+      {
+        "name": "JavaScript",
+        "category": "technical",
+        "tools": []
+      },
+      {
+        "name": "SQL",
+        "category": "technical",
+        "tools": []
+      },
+      {
+        "name": "Content Calendar Management",
+        "category": "social",
+        "tools": ["Asana", "Monday", "Trello"]
+      },
+      {
+        "name": "Brand Guidelines Development",
+        "category": "strategy",
+        "tools": ["Figma", "Notion", "Miro"]
+      }
+    ]
+  },
+  "soft_skills": {
+    "description": "Interpersonal and communication competencies applicable across roles",
+    "skills": [
+      {
+        "name": "Communication",
+        "definition": "Ability to convey ideas clearly and persuasively across channels"
+      },
+      {
+        "name": "Collaboration",
+        "definition": "Ability to work effectively with cross-functional teams"
+      },
+      {
+        "name": "Project Management",
+        "definition": "Ability to organize, prioritize, and execute on complex initiatives"
+      },
+      {
+        "name": "Creativity",
+        "definition": "Ability to generate novel ideas and solutions"
+      },
+      {
+        "name": "Problem Solving",
+        "definition": "Ability to identify and resolve challenges systematically"
+      },
+      {
+        "name": "Adaptability",
+        "definition": "Ability to adjust to changing requirements and environments"
+      },
+      {
+        "name": "Time Management",
+        "definition": "Ability to prioritize and execute tasks efficiently"
+      },
+      {
+        "name": "Attention to Detail",
+        "definition": "Ability to maintain consistency and accuracy in work"
+      },
+      {
+        "name": "Stakeholder Management",
+        "definition": "Ability to manage relationships and expectations with stakeholders"
+      },
+      {
+        "name": "Presentation Skills",
+        "definition": "Ability to present ideas effectively to audiences"
+      },
+      {
+        "name": "Negotiation",
+        "definition": "Ability to find mutually beneficial solutions"
+      },
+      {
+        "name": "Empathy",
+        "definition": "Ability to understand and relate to audience needs and perspectives"
+      }
+    ]
+  },
+  "strategic_skills": {
+    "description": "High-level thinking competencies for planning and decision-making",
+    "skills": [
+      {
+        "name": "Strategic Planning",
+        "definition": "Ability to develop long-term vision and roadmaps"
+      },
+      {
+        "name": "Business Acumen",
+        "definition": "Understanding of business models, metrics, and value creation"
+      },
+      {
+        "name": "Market Analysis",
+        "definition": "Ability to analyze competitive landscape and market trends"
+      },
+      {
+        "name": "Brand Strategy",
+        "definition": "Ability to develop and articulate brand positioning and messaging"
+      },
+      {
+        "name": "Customer Insights",
+        "definition": "Ability to understand and analyze customer behavior and needs"
+      },
+      {
+        "name": "Product Strategy",
+        "definition": "Ability to align product decisions with business and customer goals"
+      },
+      {
+        "name": "Revenue Strategy",
+        "definition": "Ability to develop strategies that drive revenue growth"
+      },
+      {
+        "name": "Growth Hacking",
+        "definition": "Ability to identify and execute scalable growth experiments"
+      },
+      {
+        "name": "Budget Planning",
+        "definition": "Ability to allocate and optimize resources effectively"
+      },
+      {
+        "name": "Competitive Intelligence",
+        "definition": "Ability to monitor and analyze competitor strategies"
+      },
+      {
+        "name": "Trend Forecasting",
+        "definition": "Ability to anticipate and prepare for market and cultural trends"
+      },
+      {
+        "name": "Thought Leadership",
+        "definition": "Ability to establish authority and influence in a domain"
+      }
+    ]
+  },
+  "ai_operational_skills": {
+    "description": "Skills for implementing and operationalizing AI tools in workflows",
+    "skills": [
+      {
+        "name": "Prompt Engineering",
+        "definition": "Ability to design effective prompts for LLM outputs",
+        "tools": ["ChatGPT", "Claude", "Gemini"]
+      },
+      {
+        "name": "AI Workflow Automation",
+        "definition": "Ability to integrate AI tools into existing workflows",
+        "tools": ["Zapier", "Make", "IFTTT"]
+      },
+      {
+        "name": "AI Content Generation Direction",
+        "definition": "Ability to guide and refine AI-generated content",
+        "tools": ["ChatGPT", "Claude", "Midjourney"]
+      },
+      {
+        "name": "AI Tool Selection and Evaluation",
+        "definition": "Ability to identify and evaluate appropriate AI tools for tasks",
+        "tools": []
+      },
+      {
+        "name": "Template and System Design",
+        "definition": "Ability to create reusable AI prompts and workflows",
+        "tools": []
+      },
+      {
+        "name": "Quality Assurance for AI Outputs",
+        "definition": "Ability to evaluate and validate AI-generated content",
+        "tools": []
+      },
+      {
+        "name": "AI Integration with Existing Tools",
+        "definition": "Ability to connect AI tools with existing software stack",
+        "tools": ["Zapier", "Make", "API integrations"]
+      },
+      {
+        "name": "Batch Processing and Scaling",
+        "definition": "Ability to process large volumes of content with AI",
+        "tools": ["Python", "API calls", "Batch tools"]
+      },
+      {
+        "name": "Fine-tuning and Customization",
+        "definition": "Ability to customize AI models for specific use cases",
+        "tools": ["OpenAI API", "Anthropic API"]
+      },
+      {
+        "name": "Error Handling and Fallbacks",
+        "definition": "Ability to build resilience into AI workflows",
+        "tools": []
+      }
+    ]
+  },
+  "ai_cognitive_skills": {
+    "description": "Higher-order thinking competencies leveraging AI capabilities",
+    "skills": [
+      {
+        "name": "AI-Augmented Ideation",
+        "definition": "Ability to use AI as creative partner for brainstorming and ideation",
+        "examples": ["Generating campaign concepts with Claude", "Creating design variations with Midjourney"]
+      },
+      {
+        "name": "AI-Powered Research",
+        "definition": "Ability to conduct research by leveraging AI analysis and synthesis",
+        "examples": ["Market research synthesis", "Competitive intelligence gathering", "Trend analysis"]
+      },
+      {
+        "name": "AI-Assisted Strategy Development",
+        "definition": "Ability to develop strategies with AI-generated insights and scenarios",
+        "examples": ["Scenario planning", "Strategic option evaluation"]
+      },
+      {
+        "name": "AI-Enhanced Problem Solving",
+        "definition": "Ability to use AI to explore solutions and identify blind spots",
+        "examples": ["Root cause analysis", "Solution design", "Risk assessment"]
+      },
+      {
+        "name": "AI Content Remix and Adaptation",
+        "definition": "Ability to leverage AI to repurpose and adapt content across formats",
+        "examples": ["Blog to social series", "Long-form to short-form", "Article to video script"]
+      },
+      {
+        "name": "AI-Informed Decision Making",
+        "definition": "Ability to incorporate AI-generated analysis into decisions",
+        "examples": ["Data-driven decisions with AI synthesis", "Predictive analysis interpretation"]
+      },
+      {
+        "name": "Agentic Workflow Design",
+        "definition": "Ability to design multi-step AI workflows with feedback loops",
+        "examples": ["Autonomous content generation pipelines", "Iterative design processes"]
+      },
+      {
+        "name": "AI Experimentation",
+        "definition": "Ability to run rapid tests with AI to validate hypotheses",
+        "examples": ["Copy testing with AI variations", "Design iteration experiments"]
+      },
+      {
+        "name": "Cross-Domain AI Application",
+        "definition": "Ability to apply AI insights from one domain to another creatively",
+        "examples": ["Design thinking + AI operations", "Marketing insights + PR strategy"]
+      },
+      {
+        "name": "AI Literacy and Critical Thinking",
+        "definition": "Ability to understand AI capabilities, limitations, and biases",
+        "examples": ["Evaluating AI output quality", "Understanding hallucinations", "Bias detection"]
+      }
+    ]
+  }
+}

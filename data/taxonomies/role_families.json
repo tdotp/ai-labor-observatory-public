@@ -1,0 +1,311 @@
+{
+  "role_families": [
+    {
+      "family_id": "design_creative",
+      "family_name": "Design & Creative",
+      "description": "Professionals focused on visual design, brand expression, and creative direction",
+      "capa_a_category": "creatividad_diseno",
+      "roles": [
+        {
+          "role_name": "Graphic Designer",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["Graphic Design", "Visual Communication", "Brand Guidelines", "Attention to Detail"],
+          "typical_tools": ["Figma", "Adobe Creative Suite", "InDesign"]
+        },
+        {
+          "role_name": "UI Designer",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["UI Design", "Design Systems", "Interaction Design", "Prototyping"],
+          "typical_tools": ["Figma", "Adobe XD", "Framer"]
+        },
+        {
+          "role_name": "UX Designer",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["User Research", "Wireframing", "Usability Testing", "Information Architecture"],
+          "typical_tools": ["Figma", "UserTesting", "Miro"]
+        },
+        {
+          "role_name": "Product Designer",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Product Strategy", "User Research", "Design Systems", "Cross-functional Collaboration"],
+          "typical_tools": ["Figma", "Jira", "Analytics Tools"]
+        },
+        {
+          "role_name": "Art Director",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Creative Direction", "Visual Storytelling", "Brand Strategy", "Team Leadership"],
+          "typical_tools": ["Figma", "Adobe Suite", "Miro"]
+        },
+        {
+          "role_name": "Creative Director",
+          "seniority_levels": ["Senior", "Lead", "Executive"],
+          "key_skills": ["Creative Leadership", "Strategic Thinking", "Brand Strategy", "Team Mentorship"],
+          "typical_tools": ["Design Tools", "Presentation Software"]
+        },
+        {
+          "role_name": "Motion Designer",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["Motion Design", "Animation", "Visual Effects", "Storytelling"],
+          "typical_tools": ["After Effects", "Cinema 4D", "Blender"]
+        },
+        {
+          "role_name": "Design System Lead",
+          "seniority_levels": ["Senior", "Lead"],
+          "key_skills": ["Design Systems", "Documentation", "Standardization", "Cross-team Collaboration"],
+          "typical_tools": ["Figma", "GitHub"]
+        }
+      ]
+    },
+    {
+      "family_id": "content_social",
+      "family_name": "Social & Content",
+      "description": "Professionals managing content creation, social platforms, and community engagement",
+      "capa_a_category": "contenido_social",
+      "roles": [
+        {
+          "role_name": "Social Media Manager",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["Social Media Management", "Community Management", "Content Calendar", "Engagement"],
+          "typical_tools": ["Hootsuite", "Buffer", "Sprout Social"]
+        },
+        {
+          "role_name": "Content Creator",
+          "seniority_levels": ["Junior", "Mid", "Senior"],
+          "key_skills": ["Content Creation", "Copywriting", "Visual Design", "Storytelling"],
+          "typical_tools": ["Figma", "Canva", "TikTok Creator Suite"]
+        },
+        {
+          "role_name": "Content Strategist",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Content Strategy", "Audience Analysis", "Editorial Planning", "Brand Voice"],
+          "typical_tools": ["Analytics Tools", "Content Management Systems"]
+        },
+        {
+          "role_name": "Community Manager",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["Community Building", "Engagement", "Conflict Resolution", "Relationship Management"],
+          "typical_tools": ["Discord", "Slack", "Community Platforms"]
+        },
+        {
+          "role_name": "Video Content Producer",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["Video Production", "Storytelling", "Editing", "Audio Design"],
+          "typical_tools": ["Premiere Pro", "Final Cut Pro", "DaVinci Resolve"]
+        },
+        {
+          "role_name": "Photographer",
+          "seniority_levels": ["Junior", "Mid", "Senior"],
+          "key_skills": ["Photography", "Post-processing", "Lighting", "Composition"],
+          "typical_tools": ["Lightroom", "Photoshop", "Camera Equipment"]
+        },
+        {
+          "role_name": "Social Content Specialist",
+          "seniority_levels": ["Junior", "Mid", "Senior"],
+          "key_skills": ["Social Media Content", "Trend Analysis", "Platform Expertise", "Content Adaptation"],
+          "typical_tools": ["Figma", "Canva", "TikTok Creator Suite"]
+        },
+        {
+          "role_name": "Content Director",
+          "seniority_levels": ["Senior", "Lead", "Executive"],
+          "key_skills": ["Content Strategy", "Team Leadership", "Brand Voice", "Editorial Vision"],
+          "typical_tools": ["Content Management Systems", "Analytics"]
+        }
+      ]
+    },
+    {
+      "family_id": "marketing_growth",
+      "family_name": "Marketing & Growth",
+      "description": "Professionals driving customer acquisition, retention, and revenue growth",
+      "capa_a_category": "marketing_growth",
+      "roles": [
+        {
+          "role_name": "Growth Marketer",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Growth Strategy", "Analytics", "Experimentation", "Product Sense"],
+          "typical_tools": ["Google Analytics", "A/B Testing Tools", "SQL"]
+        },
+        {
+          "role_name": "Performance Marketer",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["PPC/SEM", "Analytics", "Optimization", "ROI Focus"],
+          "typical_tools": ["Google Ads", "Meta Ads Manager", "Analytics"]
+        },
+        {
+          "role_name": "Marketing Manager",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Marketing Strategy", "Campaign Management", "Analytics", "Team Leadership"],
+          "typical_tools": ["HubSpot", "Marketing Automation", "Analytics"]
+        },
+        {
+          "role_name": "Product Marketer",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Product Strategy", "Messaging", "Market Analysis", "Sales Enablement"],
+          "typical_tools": ["Analytics", "Presentation Software"]
+        },
+        {
+          "role_name": "Demand Generation Manager",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Lead Generation", "Campaign Management", "Analytics", "Marketing Automation"],
+          "typical_tools": ["HubSpot", "Marketo", "Pardot"]
+        },
+        {
+          "role_name": "Email Marketing Specialist",
+          "seniority_levels": ["Junior", "Mid", "Senior"],
+          "key_skills": ["Email Marketing", "Copywriting", "Segmentation", "Analytics"],
+          "typical_tools": ["HubSpot", "Mailchimp", "ConvertKit"]
+        },
+        {
+          "role_name": "SEO Specialist",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["SEO", "Content Strategy", "Technical SEO", "Analytics"],
+          "typical_tools": ["SEMrush", "Ahrefs", "Google Search Console"]
+        },
+        {
+          "role_name": "Marketing Operations Manager",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Marketing Automation", "CRM Management", "Process Optimization", "Analytics"],
+          "typical_tools": ["HubSpot", "Salesforce", "Zapier"]
+        },
+        {
+          "role_name": "Chief Marketing Officer",
+          "seniority_levels": ["Executive"],
+          "key_skills": ["Marketing Strategy", "Business Acumen", "Leadership", "Revenue Growth"],
+          "typical_tools": ["Analytics", "Business Intelligence"]
+        }
+      ]
+    },
+    {
+      "family_id": "communications_pr",
+      "family_name": "Communications & PR",
+      "description": "Professionals managing brand narrative, media relations, and stakeholder communications",
+      "capa_a_category": "pr_comunicaciones",
+      "roles": [
+        {
+          "role_name": "PR Manager",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Media Relations", "Press Releases", "Crisis Management", "Stakeholder Communication"],
+          "typical_tools": ["Press Distribution Services", "Media Monitoring"]
+        },
+        {
+          "role_name": "Communications Manager",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Internal Communications", "Brand Messaging", "Stakeholder Management", "Content Creation"],
+          "typical_tools": ["Figma", "Presentation Software"]
+        },
+        {
+          "role_name": "Public Relations Specialist",
+          "seniority_levels": ["Junior", "Mid", "Senior"],
+          "key_skills": ["Media Outreach", "Press Relations", "Copywriting", "Campaign Management"],
+          "typical_tools": ["Press Distribution Services", "Monitoring Tools"]
+        },
+        {
+          "role_name": "Corporate Communications",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Internal Communications", "Change Management", "Employee Engagement", "Crisis Communications"],
+          "typical_tools": ["Communication Platforms", "Intranet Systems"]
+        },
+        {
+          "role_name": "Thought Leadership Manager",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Content Strategy", "Executive Positioning", "Media Relations", "Speaking Engagement Mgmt"],
+          "typical_tools": ["LinkedIn", "Publishing Platforms"]
+        },
+        {
+          "role_name": "Crisis Communications Manager",
+          "seniority_levels": ["Senior", "Lead"],
+          "key_skills": ["Crisis Management", "Media Relations", "Messaging", "Rapid Response"],
+          "typical_tools": ["Monitoring Tools", "Press Distribution"]
+        },
+        {
+          "role_name": "Communications Director",
+          "seniority_levels": ["Senior", "Lead", "Executive"],
+          "key_skills": ["Communications Strategy", "Team Leadership", "Brand Advocacy", "Stakeholder Relations"],
+          "typical_tools": ["Communication Platforms"]
+        }
+      ]
+    },
+    {
+      "family_id": "account_relationships",
+      "family_name": "Account & Relationship Management",
+      "description": "Professionals managing client and partner relationships, account success, and strategic partnerships",
+      "capa_a_category": "estrategia_cuentas",
+      "roles": [
+        {
+          "role_name": "Account Manager",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["Relationship Management", "Account Strategy", "Negotiation", "Sales"],
+          "typical_tools": ["Salesforce", "HubSpot", "Email"]
+        },
+        {
+          "role_name": "Account Executive",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Sales", "Closing", "Negotiation", "Business Development"],
+          "typical_tools": ["Salesforce", "Outreach", "Email"]
+        },
+        {
+          "role_name": "Client Success Manager",
+          "seniority_levels": ["Junior", "Mid", "Senior", "Lead"],
+          "key_skills": ["Customer Success", "Account Management", "Problem Solving", "Relationship Building"],
+          "typical_tools": ["Salesforce", "Customer Success Platform"]
+        },
+        {
+          "role_name": "Customer Success Manager",
+          "seniority_levels": ["Junior", "Mid", "Senior"],
+          "key_skills": ["Customer Onboarding", "Product Knowledge", "Relationship Management", "Retention"],
+          "typical_tools": ["Gainsight", "HubSpot", "Customer Success Tools"]
+        },
+        {
+          "role_name": "Strategic Account Manager",
+          "seniority_levels": ["Senior", "Lead"],
+          "key_skills": ["Strategic Thinking", "Large Account Management", "Executive Relationships", "Expansion"],
+          "typical_tools": ["Salesforce", "Analytics", "Business Intelligence"]
+        },
+        {
+          "role_name": "Account Development Manager",
+          "seniority_levels": ["Junior", "Mid"],
+          "key_skills": ["Lead Qualification", "Prospecting", "Sales Process", "CRM Management"],
+          "typical_tools": ["Salesforce", "LinkedIn Sales Navigator"]
+        },
+        {
+          "role_name": "Partnership Manager",
+          "seniority_levels": ["Mid", "Senior", "Lead"],
+          "key_skills": ["Partnership Development", "Relationship Management", "Negotiation", "Strategic Alignment"],
+          "typical_tools": ["Partnership Management Tools"]
+        },
+        {
+          "role_name": "VP of Sales",
+          "seniority_levels": ["Executive"],
+          "key_skills": ["Sales Leadership", "Revenue Strategy", "Team Building", "Business Development"],
+          "typical_tools": ["Salesforce", "Analytics"]
+        }
+      ]
+    }
+  ],
+  "seniority_framework": {
+    "junior": {
+      "level": 1,
+      "description": "Entry-level professionals with 0-3 years of experience in role family",
+      "characteristics": ["Learning focus", "Execution-oriented", "Process-driven", "Mentorship-dependent"]
+    },
+    "mid": {
+      "level": 2,
+      "description": "Professionals with 3-7 years of experience with demonstrated expertise",
+      "characteristics": ["Independent execution", "Emerging strategic thinking", "Mentoring juniors", "Project ownership"]
+    },
+    "senior": {
+      "level": 3,
+      "description": "Professionals with 7+ years of experience with strategic influence",
+      "characteristics": ["Strategic ownership", "Team leadership", "Expertise and mentorship", "Cross-functional influence"]
+    },
+    "lead": {
+      "level": 4,
+      "description": "Senior professionals managing teams or major initiatives",
+      "characteristics": ["Team management", "Strategic planning", "Department-level decisions", "Executive interface"]
+    },
+    "executive": {
+      "level": 5,
+      "description": "C-suite and executive leadership roles",
+      "characteristics": ["Organization-level strategy", "Board interface", "Revenue responsibility", "Industry influence"]
+    }
+  }
+}
