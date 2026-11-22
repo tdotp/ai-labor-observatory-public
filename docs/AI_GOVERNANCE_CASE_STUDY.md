@@ -84,9 +84,56 @@ During development, an AI coding assistant was asked to "allow the cron to run t
 
 ---
 
+## V2 Controls (Added in This Release)
+
+The following controls were added in V2 to close gaps identified during the initial review:
+
+**Classifier Evaluation (Prioridad 1)**
+
+| Control | Risk | Implementation | Evidence | Test | Result | Residual Limitation |
+|---------|------|----------------|----------|------|--------|---------------------|
+| Gold set (45 synthetic vacancies) | No ground truth for classifier evaluation | `data/gold_set/vacancies_gold.json` with rule-based reference labels | 8 case types covered; 9 ambiguous cases marked | `tests/test_evaluation.py` (22 tests) | PASS — all 22 tests pass | Labels are rule-based, not human-annotated |
+| Evaluation module with per-class metrics | Accuracy unknown; no macro-F1 tracked | `evaluation/classifier_eval.py` — computes macro-F1, per-class P/R/F1, invalid rate | Rule-based baseline: role_family F1=0.308, seniority F1=0.758, ai_level F1=0.314 | `test_perfect_predictor_yields_f1_one`, `test_rule_based_baseline_metrics` | PASS | Real LLM evaluation requires live API; not run in demo |
+| Mock/live LLM distinction | Demo results could be confused with real LLM results | `is_live_llm` flag in `EvaluationReport`; disclaimer in every report | Report `note` field asserts rule-based baseline; `is_live_llm=False` in all tests | `test_report_note_disclaims_ground_truth_validation` | PASS | — |
+
+**Strict Taxonomy Validation (Prioridad 2)**
+
+| Control | Risk | Implementation | Evidence | Test | Result | Residual Limitation |
+|---------|------|----------------|----------|------|--------|---------------------|
+| Reject invalid taxonomy values (no silent coercion) | Invalid labels stored without error | `validation/taxonomy_validator.py` — errors = reject; warnings = accept with note | `normalized=None` on failure; `is_valid=False` with error list | `tests/test_taxonomy_validator.py` (35+ tests) | PASS | ai_level string labels (e.g. "medium") are coerced with a warning |
+| Structured error types | Validation failures not distinguishable | `ValidationResult(is_valid, errors, warnings, normalized)` | Each error is a distinct message string | `test_bool_ai_level_rejected`, `test_invalid_role_family_not_converted` | PASS | — |
+| None-response handling | None (API failure) causes AttributeError | `validate_batch()` checks None explicitly | `ValidationResult(is_valid=False, errors=["No classification returned…"])` | `test_none_classification_handled_gracefully` | PASS | — |
+
+**Budget and Cron Controls (Prioridad 3)**
+
+| Control | Risk | Implementation | Evidence | Test | Result | Residual Limitation |
+|---------|------|----------------|----------|------|--------|---------------------|
+| Budget abort (RUN_BUDGET_USD=5.0) | Uncapped spend | `BudgetGuard.check_before_call()` raises RuntimeError when estimated cost ≥ budget | Config reads from env; guard called before every LLM call | `tests/test_budget_and_cron.py` — budget exhaustion tests | PASS | Cost estimate uses approximate token rate; actual cost may vary |
+| Call limit abort (MAX_LLM_CALLS_PER_RUN=500) | Unbounded runs | `BudgetGuard.check_before_call()` raises RuntimeError when calls ≥ limit | Same guard | call limit tests | PASS | — |
+| Cron lock tested without touching production path | Tests could accidentally delete /var/run/observatory_cron.lock | `CronLockSimulator` uses `tmp_path`; `test_production_lock_path_is_not_touched` asserts isolation | Test assertions confirm simulator path ≠ production path | `test_production_lock_path_is_not_touched` | PASS | Production lock path enforced by policy, not filesystem permissions |
+| Retry and provider error handling | Uncaught exceptions crash the pipeline | Classifier uses `tenacity`; `RetryError` caught in tests | `pytest.raises((httpx.ConnectError, httpx.HTTPError, RetryError))` | API error tests | PASS | — |
+
+**Traceability and Provenance (Prioridad 4)**
+
+| Control | Risk | Implementation | Evidence | Test | Result | Residual Limitation |
+|---------|------|----------------|----------|------|--------|---------------------|
+| Per-classification provenance | Label unattributable to run/model/prompt | `classification/provenance.py` — RunContext (run_id UUID, prompt SHA-256, taxonomy version), ProvenanceTracker | `provenance` dict attached to every classification | `tests/test_provenance.py` (25+ tests) | PASS | Historical labels (pre-V2) have no provenance |
+| validation_status enum enforced | Unknown string values could be stored | `ProvenanceTracker.build()` raises ValueError for invalid statuses | Allowed: valid, invalid_taxonomy, invalid_json, api_error | `test_provenance_invalid_status_raises` | PASS | — |
+| Served model vs. requested model tracked | Alias routing means served model may differ | `served_model` field in provenance dict | Tests assert `requested_model ≠ served_model` case | `test_provenance_served_model_can_differ_from_requested` | PASS | — |
+
+**Fully Synthetic Demo (Prioridad 6)**
+
+| Control | Risk | Implementation | Evidence | Test | Result | Residual Limitation |
+|---------|------|----------------|----------|------|--------|---------------------|
+| Scraper stubs raise NotImplementedError | Test suite could inadvertently call production scrapers | `pipeline/extractor.py` and `pipeline/loader.py` stub methods | `ALO-LEGAL-01` comment; `NotImplementedError` on call | Existing governance tests | PASS | Requires operator discipline not to swap stubs back in |
+| No real credentials in repo | Credential exposure | Scan: 0 secrets found across all new files | `gitleaks`/`truffleHog`-compatible scan passed | Manual + automated scan | PASS | — |
+
+---
+
 ## Limitations
 
-- **No human gold set exists.** The 5,610 labels collected to date have not been validated against human annotations. Classification accuracy is unknown.
+- **No human gold set exists.** The 45 vacancies in `data/gold_set/` use rule-based reference labels. The 5,610 labels collected to date have not been validated against human annotations. Classification accuracy against real-world job postings is unknown.
+- **Rule-based baseline ≠ LLM evaluation.** The metrics in `docs/MODEL_EVALUATION.md` compare a keyword heuristic against reference labels, not the LLM classifier against ground truth.
 - **LLM-reported confidence is not calibrated.** The model's self-reported confidence score does not correspond to a measured precision rate.
 - **Data collection legality is unresolved.** The scraping method via third-party Apify actors has not received legal review against LinkedIn and Indeed terms of service.
 - **VPS hardening is incomplete.** SSH root login by password remains active on the production server. This requires operator action.

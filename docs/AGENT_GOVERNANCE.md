@@ -46,6 +46,26 @@ This policy is enforced by procedure, not by technical controls. Technical enfor
 
 ---
 
+## V2 Verified Controls (Test Suite)
+
+The following controls are verified by the test suite in `tests/test_budget_and_cron.py`:
+
+| Test | Scenario | Result |
+|------|----------|--------|
+| `test_budget_abort_on_cost_exceeded` | Estimated cost ≥ RUN_BUDGET_USD → RuntimeError | PASS |
+| `test_call_limit_abort_on_max_calls` | LLM calls ≥ MAX_LLM_CALLS_PER_RUN → RuntimeError | PASS |
+| `test_budget_not_exhausted_at_limit` | At exactly the limit, no abort | PASS |
+| `test_cron_lock_acquired_before_run` | `CronLockSimulator.acquire()` returns True | PASS |
+| `test_cron_lock_blocks_parallel_run` | Second acquire returns False (already locked) | PASS |
+| `test_cron_minimum_interval_enforced` | Run rejected if < 4-day interval | PASS |
+| `test_stale_lock_detected` | Lock older than 7 days → `is_stale()` True | PASS |
+| `test_production_lock_path_is_not_touched` | Simulator path ≠ `/var/run/observatory_cron.lock` | PASS |
+| API error retry tests | ConnectError, JSONDecodeError → RetryError handled | PASS |
+
+**Note on the production lock path:** `/var/run/observatory_cron.lock` is **never touched by the test suite**. `CronLockSimulator` uses `pytest`'s `tmp_path` fixture exclusively. This is enforced by a dedicated test.
+
+---
+
 ## Outstanding Risks
 
 | Risk | Status |

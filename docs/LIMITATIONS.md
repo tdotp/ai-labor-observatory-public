@@ -30,11 +30,13 @@ This document lists the known limitations of the AI Labor Observatory. It is int
 
 LLM classification is the core output of the observatory. These limitations apply to every label in the dataset:
 
-- **No human gold set exists.** The 5,610 labels collected to date have not been validated against human annotations. Classification accuracy, precision, and recall are unknown.
+- **No human gold set exists.** The 5,610 labels collected to date have not been validated against human annotations. Classification accuracy, precision, and recall against real-world job postings are unknown.
+- **The evaluation gold set uses rule-based labels, not human annotations.** The 45 synthetic vacancies in `data/gold_set/` have reference labels assigned by the system authors using written rules. These do not substitute for expert human annotation. The metrics in `docs/MODEL_EVALUATION.md` measure a keyword heuristic against these reference labels, not the LLM classifier against ground truth.
 - **Temperature 0 does not guarantee correctness.** It guarantees that the same input produces the same output for a given model version. The output may still be wrong.
 - **LLM-reported confidence is not calibrated.** A reported confidence of 0.85 does not mean the label is correct 85% of the time. Use confidence as an ordinal signal, not a probability.
-- **Model version drift.** OpenRouter may route requests to different model versions over time. Labels generated before and after a silent model update are not guaranteed to be consistent.
-- **Borderline roles.** Roles that span multiple families (e.g., a content strategist with strong UX responsibilities) will be assigned to a single family. The choice is not always obvious even to human raters.
+- **Model version drift.** OpenRouter may route requests to different model versions over time. Labels generated before and after a silent model update are not guaranteed to be consistent. Per-classification provenance (served model, prompt SHA-256) is tracked from V2 onwards; historical labels (pre-V2) have incomplete provenance.
+- **Borderline roles.** Roles that span multiple families (e.g., a content strategist with strong UX responsibilities) will be assigned to a single family. The choice is not always obvious even to human raters. The gold set marks ambiguous cases explicitly (`is_ambiguous=true`), but no mechanism flags ambiguity in production classifications.
+- **Taxonomy validator warnings are not errors.** String ai_level values (e.g., "medium") are coerced to integers with a warning, not rejected. This keeps the pipeline running but masks prompt regression — if the model starts returning string labels, the warning may go unnoticed without active monitoring.
 
 ---
 

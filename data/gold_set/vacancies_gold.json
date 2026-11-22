@@ -1,0 +1,812 @@
+[
+  {
+    "vacancy_id": "GOLD-001",
+    "raw_title": "AI Content Strategist",
+    "raw_description": "Lead content strategy for a SaaS company. You will use ChatGPT-4 and Claude daily to draft content, run A/B tests on headlines, and produce weekly reports. Proficiency in Midjourney for social visuals is required. We expect AI to handle the first draft of all materials.",
+    "raw_requirements": "3+ years content strategy. Mandatory: ChatGPT, Claude, Midjourney. Strong editorial judgment to review AI outputs.",
+    "company_name": "SaaSGrowth MX",
+    "country": "Mexico",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "senior",
+      "ai_level": 3
+    },
+    "case_metadata": {
+      "case_type": "explicit_ai_tools",
+      "is_ambiguous": false,
+      "notes": "AI tools explicitly listed and mandatory. 3 tools named. ai_level=3 (high)."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-002",
+    "raw_title": "Creative Director",
+    "raw_description": "Lead the visual identity of our brand across all channels. You will oversee a team of designers and ensure consistency in brand expression. No specific technology requirements beyond standard design tools. Looking for strong creative vision and leadership.",
+    "raw_requirements": "10+ years design experience, 3+ years in leadership. Portfolio required.",
+    "company_name": "Agencia Creativa Colombia",
+    "country": "Colombia",
+    "ground_truth": {
+      "role_family": "creatividad_diseno",
+      "seniority": "director",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Zero AI mentions. Senior creative leadership. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-003",
+    "raw_title": "Growth Marketing Manager — AI-Native Team",
+    "raw_description": "Join our AI-first marketing team. You will design growth experiments, run paid campaigns optimized via AI bidding systems, and use Jasper for ad copy generation and Persado for personalization at scale. AI tools are core to our workflow, not optional.",
+    "raw_requirements": "5+ years growth marketing. Required: Jasper, Persado, Google Ads Smart Bidding. Python basics a plus.",
+    "company_name": "Fintech AR",
+    "country": "Argentina",
+    "ground_truth": {
+      "role_family": "marketing_growth",
+      "seniority": "senior",
+      "ai_level": 3
+    },
+    "case_metadata": {
+      "case_type": "ai_as_primary_requirement",
+      "is_ambiguous": false,
+      "notes": "AI tools explicitly required, described as core. ai_level=3."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-004",
+    "raw_title": "Community Manager",
+    "raw_description": "Manage our brand community across Instagram, TikTok, and LinkedIn. Create and schedule posts, respond to comments, run giveaways, and report on engagement metrics weekly. Familiarity with social scheduling tools required.",
+    "raw_requirements": "2+ years social media. Hootsuite or Buffer experience. Strong writing skills. No specific AI tools required.",
+    "company_name": "Retail Chile",
+    "country": "Chile",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "junior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "No AI mentions. Entry-level social role. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-005",
+    "raw_title": "UX Designer Senior",
+    "raw_description": "Design user experiences for our mobile banking app. Conduct user research, create wireframes and high-fidelity prototypes in Figma, and run usability tests. You will be expected to stay up to date with design tools — we're exploring AI-assisted design tools like Figma AI as optional enhancements.",
+    "raw_requirements": "5+ years UX design. Figma expert. User research methods. AI tools knowledge is a plus.",
+    "company_name": "BancoDigital PE",
+    "country": "Peru",
+    "ground_truth": {
+      "role_family": "creatividad_diseno",
+      "seniority": "senior",
+      "ai_level": 1
+    },
+    "case_metadata": {
+      "case_type": "ai_as_desirable",
+      "is_ambiguous": false,
+      "notes": "AI tools mentioned as optional/plus. ai_level=1 (low)."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-006",
+    "raw_title": "PR Manager",
+    "raw_description": "Lead media relations for our telecommunications company. Write press releases, manage journalist relationships, coordinate crisis communications, and prepare executive spokespersons for media appearances. Work with the communications team to maintain brand narrative.",
+    "raw_requirements": "7+ years PR experience. Existing media contacts in Brazil. Excellent written and verbal communication.",
+    "company_name": "Telecom BR",
+    "country": "Brazil",
+    "ground_truth": {
+      "role_family": "pr_comunicaciones",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Traditional PR role, no AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-007",
+    "raw_title": "Account Manager Digital",
+    "raw_description": "Manage relationships with 20-30 mid-market clients in the digital advertising space. You will own retention targets, run quarterly business reviews, upsell new products, and act as the main point of contact for escalations. Use Salesforce for CRM and automation flows.",
+    "raw_requirements": "4+ years account management. Salesforce or HubSpot experience. Strong negotiation skills.",
+    "company_name": "Media Agency MX",
+    "country": "Mexico",
+    "ground_truth": {
+      "role_family": "estrategia_cuentas",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "automation_no_ai",
+      "is_ambiguous": false,
+      "notes": "CRM automation but no LLM/generative AI. Salesforce is not AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-008",
+    "raw_title": "Copywriter Junior — Herramientas de IA",
+    "raw_description": "Redactar contenido para redes sociales, emails y blogs. Usarás herramientas como ChatGPT para generar borradores, pero deberás revisarlos y editarlos con criterio propio. Buscamos alguien con ganas de aprender el flujo de trabajo con IA generativa.",
+    "raw_requirements": "1-2 años de experiencia en copywriting. Deseable experiencia con herramientas de IA generativa. Español nativo.",
+    "company_name": "Startup Contenidos CO",
+    "country": "Colombia",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "junior",
+      "ai_level": 2
+    },
+    "case_metadata": {
+      "case_type": "ai_as_primary_requirement",
+      "is_ambiguous": false,
+      "notes": "Spanish vacancy. AI tool (ChatGPT) central to workflow but editorial judgment required. ai_level=2."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-009",
+    "raw_title": "Video Editor",
+    "raw_description": "Edit long-form and short-form video content for YouTube and Instagram Reels. Work with the content team to execute the editorial calendar. Tools used include Premiere Pro and After Effects. Automated color grading pipelines are set up — you will maintain and improve them.",
+    "raw_requirements": "3+ years video editing. Expert in Premiere Pro, After Effects. Experience with automation scripts is a bonus.",
+    "company_name": "Media House AR",
+    "country": "Argentina",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "automation_no_ai",
+      "is_ambiguous": true,
+      "notes": "Automated pipelines mentioned but no generative AI. Automation ≠ AI. is_ambiguous=true because 'automation scripts' could mean scripted workflows or AI tools."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-010",
+    "raw_title": "Brand Strategist",
+    "raw_description": "Develop brand positioning, messaging frameworks, and go-to-market strategies for B2B clients. You will run workshops, create brand playbooks, and present to C-suite stakeholders. Extensive experience with strategic frameworks required.",
+    "raw_requirements": "8+ years brand strategy. MBA preferred. Experience presenting to C-level. Strong analytical skills.",
+    "company_name": "Consultora CL",
+    "country": "Chile",
+    "ground_truth": {
+      "role_family": "estrategia_cuentas",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Pure strategy role with no tech mentions. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-011",
+    "raw_title": "AI-Augmented Motion Designer",
+    "raw_description": "Create motion graphics and animations for social media and advertising. You will use After Effects as primary tool, supplemented by Runway ML for AI-generated video elements, Pika Labs for text-to-video prototypes, and ElevenLabs for synthetic voiceovers in draft versions.",
+    "raw_requirements": "3+ years motion design. After Effects mandatory. Runway ML, Pika Labs experience required. AI video tools are central to this role.",
+    "company_name": "Creative Studio MX",
+    "country": "Mexico",
+    "ground_truth": {
+      "role_family": "creatividad_diseno",
+      "seniority": "senior",
+      "ai_level": 3
+    },
+    "case_metadata": {
+      "case_type": "explicit_ai_tools",
+      "is_ambiguous": false,
+      "notes": "3 AI tools named, all required. ai_level=3."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-012",
+    "raw_title": "Marketing Automation Specialist",
+    "raw_description": "Configure and manage marketing automation workflows in HubSpot and Marketo. Set up lead scoring, drip campaigns, and CRM integrations. This role is technical — you will write logic flows and manage data pipelines between marketing tools. No content creation required.",
+    "raw_requirements": "3+ years marketing automation. HubSpot certified. Marketo experience. SQL or Python basics. Workflow automation focus.",
+    "company_name": "B2B SaaS BR",
+    "country": "Brazil",
+    "ground_truth": {
+      "role_family": "marketing_growth",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "automation_no_ai",
+      "is_ambiguous": false,
+      "notes": "Automation is HubSpot/Marketo workflows, not AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-013",
+    "raw_title": "Content Creator — Inteligencia Artificial",
+    "raw_description": "Creación de contenido educativo sobre herramientas de inteligencia artificial para profesionales creativos. El contenido incluye tutoriales de ChatGPT, Midjourney, Stable Diffusion y otras herramientas generativas. No necesitas usar estas herramientas tú mismo — solo documentarlas.",
+    "raw_requirements": "Redactor con experiencia en tecnología. Interés en IA. No es necesario ser usuario avanzado de las herramientas.",
+    "company_name": "EdTech LatAm",
+    "country": "Colombia",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "junior",
+      "ai_level": 1
+    },
+    "case_metadata": {
+      "case_type": "ambiguous_ai_reference",
+      "is_ambiguous": true,
+      "notes": "AI tools are the subject of content, not tools the person uses. ai_level=1 (awareness required, not proficiency)."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-014",
+    "raw_title": "Graphic Designer Junior",
+    "raw_description": "Create visual assets for social media posts, email campaigns, and presentation decks. Work closely with the marketing team to execute briefs. Figma and Canva are primary tools. Strong attention to detail and fast turnaround expected.",
+    "raw_requirements": "1-2 years design experience. Figma mandatory, Canva a plus. Good aesthetic sense. No AI tool experience required.",
+    "company_name": "E-commerce PE",
+    "country": "Peru",
+    "ground_truth": {
+      "role_family": "creatividad_diseno",
+      "seniority": "junior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Entry-level design. No AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-015",
+    "raw_title": "Head of Communications",
+    "raw_description": "Lead all internal and external communications for a 500-person company. Manage a team of 5. Develop editorial calendar, executive communications, crisis playbooks, and investor relations materials. Oversee PR agency relationships.",
+    "raw_requirements": "12+ years communications. Experience as director or head of comms. Crisis experience mandatory. Board-level communication skills.",
+    "company_name": "Corporativo MX",
+    "country": "Mexico",
+    "ground_truth": {
+      "role_family": "pr_comunicaciones",
+      "seniority": "director",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "VP/Head level comms leadership. No AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-016",
+    "raw_title": "SEO & Content Specialist",
+    "raw_description": "Develop and execute SEO strategy. Use SEMrush, Ahrefs, and Google Search Console for keyword research and performance tracking. Create content briefs and write blog posts optimized for search. We use SurferSEO for content optimization and are starting to integrate AI writing assistants to scale content output.",
+    "raw_requirements": "3+ years SEO. SEMrush or Ahrefs expert. Content writing ability. AI writing tools knowledge valued.",
+    "company_name": "Digital Agency AR",
+    "country": "Argentina",
+    "ground_truth": {
+      "role_family": "marketing_growth",
+      "seniority": "senior",
+      "ai_level": 2
+    },
+    "case_metadata": {
+      "case_type": "ai_as_desirable",
+      "is_ambiguous": false,
+      "notes": "AI writing mentioned as scaling tool, valued but not required. ai_level=2 because integration is stated as happening."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-017",
+    "raw_title": "Social Media Manager",
+    "raw_description": "Manage social media presence for a fashion brand. Plan and schedule content across Instagram, Pinterest, and TikTok. Work with photographers and content creators. Use Later or Sprout Social for scheduling. Report weekly on reach and engagement. No specific AI requirements mentioned.",
+    "raw_requirements": "2+ years social media. Fashion industry a plus. Strong visual eye. Scheduling tools experience.",
+    "company_name": "Moda CO",
+    "country": "Colombia",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "junior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Standard social role, no AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-018",
+    "raw_title": "AI Product Marketing Manager",
+    "raw_description": "Market our AI-powered analytics platform to enterprise customers. You will own product messaging for AI features, create competitive battlecards, train the sales team on AI value propositions, and produce case studies showing ROI of AI implementations. The product itself is an AI tool — this is marketing OF AI, not marketing WITH AI.",
+    "raw_requirements": "5+ years product marketing. B2B SaaS experience. Technical background a plus. Comfortable explaining AI concepts to non-technical audiences.",
+    "company_name": "AI Analytics CL",
+    "country": "Chile",
+    "ground_truth": {
+      "role_family": "marketing_growth",
+      "seniority": "senior",
+      "ai_level": 1
+    },
+    "case_metadata": {
+      "case_type": "ambiguous_ai_reference",
+      "is_ambiguous": true,
+      "notes": "Marketing an AI product, not using AI tools. ai_level=1 because deep AI knowledge is needed to market effectively."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-019",
+    "raw_title": "Diseñador UX/UI Junior",
+    "raw_description": "Diseñar interfaces para aplicaciones móviles en Figma. Trabajarás en un equipo ágil con product managers e ingenieros. Se valorará experiencia con Figma AI para acelerar flujos de trabajo de diseño. Oportunidad de crecimiento en empresa de tecnología financiera.",
+    "raw_requirements": "1-2 años experiencia UX/UI. Figma obligatorio. Conocimiento de principios de diseño. Experiencia con herramientas de IA en diseño es un plus.",
+    "company_name": "Fintech CO",
+    "country": "Colombia",
+    "ground_truth": {
+      "role_family": "creatividad_diseno",
+      "seniority": "junior",
+      "ai_level": 1
+    },
+    "case_metadata": {
+      "case_type": "ai_as_desirable",
+      "is_ambiguous": false,
+      "notes": "Spanish vacancy. AI as plus, not required. ai_level=1."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-020",
+    "raw_title": "Performance Marketing Lead",
+    "raw_description": "Lead paid media strategy across Google, Meta, LinkedIn, and programmatic channels. Manage $2M+ monthly ad spend. Use AI bidding strategies and automated campaign optimization extensively. We also use Albert.ai for autonomous campaign management on Meta — experience with AI-driven media buying tools required.",
+    "raw_requirements": "7+ years paid media. Google Ads and Meta mandatory. Albert.ai or similar AI media tool experience required. Analytical mindset.",
+    "company_name": "E-commerce MX",
+    "country": "Mexico",
+    "ground_truth": {
+      "role_family": "marketing_growth",
+      "seniority": "lead",
+      "ai_level": 3
+    },
+    "case_metadata": {
+      "case_type": "explicit_ai_tools",
+      "is_ambiguous": false,
+      "notes": "AI media buying explicitly required. Albert.ai named. ai_level=3."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-021",
+    "raw_title": "Communications Coordinator",
+    "raw_description": "Support the communications team with day-to-day operations: draft press releases, maintain media lists, monitor coverage, and coordinate logistics for executive media appearances. Entry-level role with growth potential.",
+    "raw_requirements": "1-2 years communications or PR. Excellent writing. Organized and detail-oriented. No specific tools required.",
+    "company_name": "Corp AR",
+    "country": "Argentina",
+    "ground_truth": {
+      "role_family": "pr_comunicaciones",
+      "seniority": "junior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Entry-level comms. No AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-022",
+    "raw_title": "AI-Powered Copywriter",
+    "raw_description": "Write conversion-focused copy for ads, landing pages, and email sequences. This role requires daily use of AI tools: you will prompt-engineer in Claude and GPT-4, refine AI outputs, and develop a library of optimized prompts for the team. We expect 60-70% of copy to start as AI-generated drafts that you refine.",
+    "raw_requirements": "3+ years copywriting. Daily Claude and GPT-4 use mandatory. Strong editing skills. Prompt engineering experience required.",
+    "company_name": "Agency BR",
+    "country": "Brazil",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "senior",
+      "ai_level": 3
+    },
+    "case_metadata": {
+      "case_type": "ai_as_primary_requirement",
+      "is_ambiguous": false,
+      "notes": "AI tools are core workflow, 60-70% of output starts as AI. ai_level=3."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-023",
+    "raw_title": "Brand Manager",
+    "raw_description": "Own brand strategy for our consumer packaged goods portfolio. Run brand planning, brief agencies, oversee creative production, and track brand health metrics. Collaborate with trade marketing and product teams. Standard marketing tools.",
+    "raw_requirements": "5+ years brand management. CPG experience preferred. Cross-functional collaboration skills. Agency management experience.",
+    "company_name": "CPG Company CO",
+    "country": "Colombia",
+    "ground_truth": {
+      "role_family": "marketing_growth",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Traditional brand management. No AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-024",
+    "raw_title": "Design Director",
+    "raw_description": "Lead a 15-person design team across visual design, UX, and motion. Set design standards, mentor leads, and partner with C-suite on brand strategy. We actively encourage experimentation with AI design tools — you would assess and integrate them as appropriate for the team's workflow.",
+    "raw_requirements": "12+ years design, 5+ in leadership. Design system expertise. Comfortable evaluating and adopting emerging tools including AI.",
+    "company_name": "Tech Company CL",
+    "country": "Chile",
+    "ground_truth": {
+      "role_family": "creatividad_diseno",
+      "seniority": "director",
+      "ai_level": 2
+    },
+    "case_metadata": {
+      "case_type": "ai_as_desirable",
+      "is_ambiguous": false,
+      "notes": "Active AI tool exploration expected at director level. ai_level=2 (integration is active, not just theoretical)."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-025",
+    "raw_title": "Influencer Marketing Manager",
+    "raw_description": "Build and manage an influencer marketing program from scratch. Identify creators, negotiate contracts, coordinate campaigns, and measure ROI. Use GRIN or AspireIQ for influencer relationship management. Analyze campaign performance with standard analytics tools.",
+    "raw_requirements": "4+ years influencer or creator marketing. GRIN or similar IRM platform. Strong relationship skills. Data-driven approach.",
+    "company_name": "Beauty Brand AR",
+    "country": "Argentina",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Influencer marketing platform (GRIN) is not AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-026",
+    "raw_title": "AI Governance & Ethics Researcher",
+    "raw_description": "Research and advise on responsible AI practices within our marketing technology stack. Assess AI vendor claims, audit model outputs for bias, and develop internal AI usage policies. This role sits in the communications and policy team.",
+    "raw_requirements": "Background in ethics, law, or social science. Understanding of AI/ML concepts. Policy writing experience. This is NOT a technical AI role.",
+    "company_name": "Corp MX",
+    "country": "Mexico",
+    "ground_truth": {
+      "role_family": "pr_comunicaciones",
+      "seniority": "senior",
+      "ai_level": 2
+    },
+    "case_metadata": {
+      "case_type": "ambiguous_ai_reference",
+      "is_ambiguous": true,
+      "notes": "Policy/ethics role about AI. Not using AI tools. ai_level=2 because deep AI knowledge is required for auditing."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-027",
+    "raw_title": "Especialista en Redes Sociales",
+    "raw_description": "Gestionar presencia en Instagram, Facebook y LinkedIn para marca retail. Crear contenido, responder comentarios, organizar sorteos. Publicaciones 2x por día. Herramienta principal: Meta Business Suite.",
+    "raw_requirements": "1+ año experiencia redes sociales. Meta Business Suite. Redacción creativa. No se requiere experiencia en IA.",
+    "company_name": "Retail PE",
+    "country": "Peru",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "junior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Spanish vacancy. Standard social role. Meta Business Suite is not AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-028",
+    "raw_title": "Content Strategist",
+    "raw_description": "Develop content strategy for our B2B technology company. Plan editorial calendars, brief writers, oversee content production, and track content performance. We're exploring AI tools to scale production and have piloted Notion AI for briefs — not yet mandatory.",
+    "raw_requirements": "5+ years content strategy. B2B technology experience. Data-driven content approach. Notion or similar. AI tool curiosity valued.",
+    "company_name": "B2B Tech BR",
+    "country": "Brazil",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "senior",
+      "ai_level": 1
+    },
+    "case_metadata": {
+      "case_type": "ai_as_desirable",
+      "is_ambiguous": false,
+      "notes": "AI tools in pilot/exploratory phase, not required. ai_level=1."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-029",
+    "raw_title": "Generative AI Visual Designer",
+    "raw_description": "Create visual assets entirely using generative AI tools. You will work with Midjourney, DALL-E 3, Stable Diffusion XL, and Adobe Firefly to produce marketing images, concept art, and social visuals at scale. This role requires no traditional design software — the expectation is 100% AI-generated output.",
+    "raw_requirements": "2+ years experience with Midjourney, DALL-E, Stable Diffusion, or Firefly. Strong visual taste for curating AI outputs. Prompt engineering expertise required.",
+    "company_name": "AI Creative Agency CO",
+    "country": "Colombia",
+    "ground_truth": {
+      "role_family": "creatividad_diseno",
+      "seniority": "senior",
+      "ai_level": 3
+    },
+    "case_metadata": {
+      "case_type": "ai_as_primary_requirement",
+      "is_ambiguous": false,
+      "notes": "100% AI-generated output. 4 tools named. ai_level=3."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-030",
+    "raw_title": "Account Executive",
+    "raw_description": "Close new business for our digital marketing agency. Prospect, qualify leads, run demos, and negotiate contracts. Manage pipeline in Salesforce. Meet monthly quota targets. Fast-paced role in a competitive agency environment.",
+    "raw_requirements": "3+ years B2B sales. Salesforce CRM. Strong closing skills. Marketing industry knowledge preferred.",
+    "company_name": "Agency CL",
+    "country": "Chile",
+    "ground_truth": {
+      "role_family": "estrategia_cuentas",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Sales/account exec. CRM automation is not AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-031",
+    "raw_title": "Visual Content Creator",
+    "raw_description": "Create photos and videos for Instagram and YouTube. Plan shoots, direct talent, edit content, and optimize for each platform. Proficiency in Adobe Premiere and Lightroom. The company encourages the use of AI tools for editing acceleration, with CapCut AI and Adobe Firefly already in the stack.",
+    "raw_requirements": "2+ years content creation. Premiere Pro and Lightroom mandatory. AI editing tools (CapCut AI, Firefly) experience valued.",
+    "company_name": "Media MX",
+    "country": "Mexico",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "junior",
+      "ai_level": 2
+    },
+    "case_metadata": {
+      "case_type": "ai_as_desirable",
+      "is_ambiguous": false,
+      "notes": "AI editing tools in existing stack, valued. ai_level=2."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-032",
+    "raw_title": "Marketing Manager",
+    "raw_description": "Oversee all marketing activities for our retail chain of 50 stores. Manage a team of 8, coordinate with external agencies, and own the annual marketing budget. Focus on traditional media — TV, radio, OOH — plus digital. No specific AI tool requirements.",
+    "raw_requirements": "8+ years marketing. Team management experience. Traditional and digital media mix. Budget management.",
+    "company_name": "Retail AR",
+    "country": "Argentina",
+    "ground_truth": {
+      "role_family": "marketing_growth",
+      "seniority": "lead",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Traditional marketing manager. No AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-033",
+    "raw_title": "AI Strategist — Content & Communications",
+    "raw_description": "Define how our organization adopts AI across content and communications functions. Pilot AI tools, write adoption policies, train teams, and measure productivity impact. Work closely with the technology and legal teams. This is a strategic role, not a hands-on content production role.",
+    "raw_requirements": "7+ years in content, communications, or marketing. Demonstrated AI tool experience. Change management skills. Strategic mindset.",
+    "company_name": "Corp BR",
+    "country": "Brazil",
+    "ground_truth": {
+      "role_family": "estrategia_cuentas",
+      "seniority": "senior",
+      "ai_level": 3
+    },
+    "case_metadata": {
+      "case_type": "ambiguous_ai_reference",
+      "is_ambiguous": true,
+      "notes": "AI strategist role — the whole job is AI adoption. role_family is debatable (could be pr_comunicaciones or estrategia_cuentas). ai_level=3 because AI is the entire job."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-034",
+    "raw_title": "Responsable de Marketing Digital",
+    "raw_description": "Gestionar campañas de marketing digital para empresa de seguros. Supervisar SEO, SEM, redes sociales y email marketing. Coordinar con agencias externas. Reportar a Dirección General. Se usarán herramientas estándar de marketing.",
+    "raw_requirements": "5+ años marketing digital. Google Ads y Analytics. Gestión de agencias. No se requiere experiencia en IA.",
+    "company_name": "Seguros PE",
+    "country": "Peru",
+    "ground_truth": {
+      "role_family": "marketing_growth",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Spanish vacancy. Standard digital marketing. No AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-035",
+    "raw_title": "Creative Technologist",
+    "raw_description": "Bridge creative and technology teams. Build interactive prototypes, develop creative data visualization, and explore emerging technologies — including generative AI — for campaign work. This role requires both design sensibility and coding ability.",
+    "raw_requirements": "4+ years creative tech or interactive development. JavaScript/creative coding. Figma. Generative AI experimentation experience a strong plus.",
+    "company_name": "Agency CO",
+    "country": "Colombia",
+    "ground_truth": {
+      "role_family": "creatividad_diseno",
+      "seniority": "senior",
+      "ai_level": 2
+    },
+    "case_metadata": {
+      "case_type": "ai_as_desirable",
+      "is_ambiguous": true,
+      "notes": "Creative tech role. AI is explicitly in scope but as exploration. is_ambiguous because could be classified as OTHER. ai_level=2."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-036",
+    "raw_title": "Junior Social Media Coordinator",
+    "raw_description": "Support social media team. Schedule posts using Buffer, engage with comments, assist with reporting. Part-time role, 20 hours/week. Perfect for recent graduates. No experience required.",
+    "raw_requirements": "Currently studying communications or marketing. No prior work experience required. Enthusiasm for social media.",
+    "company_name": "Startup MX",
+    "country": "Mexico",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "junior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "insufficient_info",
+      "is_ambiguous": false,
+      "notes": "Minimal description, entry-level. Classification is still possible despite sparse info."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-037",
+    "raw_title": "Especialista Creativo",
+    "raw_description": "Empresa busca especialista.",
+    "raw_requirements": "",
+    "company_name": "Empresa AR",
+    "country": "Argentina",
+    "ground_truth": {
+      "role_family": "creatividad_diseno",
+      "seniority": "junior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "insufficient_info",
+      "is_ambiguous": true,
+      "notes": "Severely insufficient info. Only title provides signal. High uncertainty — ground truth is best guess."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-038",
+    "raw_title": "Head of Social Media",
+    "raw_description": "Lead social media strategy and team for a multinational FMCG company. Oversee a team of 10 across organic and paid social. Define KPIs, platform strategy, and creator partnerships. Evaluate and integrate AI tools to increase team output — this is a core expectation of the role.",
+    "raw_requirements": "10+ years social media, 3+ in leadership. Must have evaluated and deployed AI tools in a social media context. AI tool fluency required.",
+    "company_name": "FMCG CL",
+    "country": "Chile",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "director",
+      "ai_level": 3
+    },
+    "case_metadata": {
+      "case_type": "ai_as_primary_requirement",
+      "is_ambiguous": false,
+      "notes": "AI tool deployment explicitly required at director level. ai_level=3."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-039",
+    "raw_title": "Strategic Planner",
+    "raw_description": "Develop strategic plans and insights for advertising campaigns. Conduct audience research, identify cultural tensions, and craft creative briefs. Work at the intersection of data and creativity. Data sources include standard market research platforms.",
+    "raw_requirements": "5+ years strategic planning at an agency. Cultural intelligence. Strong research skills. No specific tech requirements.",
+    "company_name": "Advertising Agency BR",
+    "country": "Brazil",
+    "ground_truth": {
+      "role_family": "estrategia_cuentas",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Traditional agency planner. No AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-040",
+    "raw_title": "Machine Learning Engineer",
+    "raw_description": "Build and deploy machine learning models for recommendation systems. Work with the data science team. Python, TensorFlow, AWS SageMaker. This is a technical engineering role, not marketing.",
+    "raw_requirements": "3+ years ML engineering. Python, TensorFlow. AWS experience. CS degree preferred.",
+    "company_name": "Tech CO",
+    "country": "Colombia",
+    "ground_truth": {
+      "role_family": "OTHER",
+      "seniority": "senior",
+      "ai_level": 3
+    },
+    "case_metadata": {
+      "case_type": "taxonomy_edge_case",
+      "is_ambiguous": false,
+      "notes": "ML Engineering does not fit the creative/marketing taxonomy. Should be OTHER. ai_level=3 (AI is core)."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-041",
+    "raw_title": "PR Director",
+    "raw_description": "Lead communications for a government ministry. Manage press relationships, draft official statements, coordinate with the minister's team. Sensitive institutional communications context. All content must go through approval processes.",
+    "raw_requirements": "15+ years institutional communications. Government experience required. High integrity and discretion. No AI tool requirements.",
+    "company_name": "Ministerio MX",
+    "country": "Mexico",
+    "ground_truth": {
+      "role_family": "pr_comunicaciones",
+      "seniority": "director",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Government/institutional PR director. No AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-042",
+    "raw_title": "Digital Content Manager",
+    "raw_description": "Manage content operations for a digital media company. Oversee editorial calendar, manage 15 freelance writers, QA all content before publication. Use Contently for content management and AI-powered editing tools (Grammarly Business, Hemingway App) for quality control.",
+    "raw_requirements": "5+ years digital content management. Contently or similar. AI editing tools. Strong editorial judgment.",
+    "company_name": "Media BR",
+    "country": "Brazil",
+    "ground_truth": {
+      "role_family": "contenido_social",
+      "seniority": "senior",
+      "ai_level": 2
+    },
+    "case_metadata": {
+      "case_type": "ai_as_desirable",
+      "is_ambiguous": true,
+      "notes": "Grammarly/Hemingway are AI-assisted but not generative AI. is_ambiguous because these are borderline AI tools. ai_level=2."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-043",
+    "raw_title": "Gerente de Cuentas Senior",
+    "raw_description": "Gestionar cartera de clientes enterprise en sector tecnológico. Mantener relaciones, renovar contratos, identificar oportunidades de upsell. Coordinar con equipos internos para garantizar entrega. CRM: Salesforce.",
+    "raw_requirements": "7+ años gestión de cuentas B2B. Salesforce. Sector tecnológico preferido. Inglés avanzado.",
+    "company_name": "IT Services AR",
+    "country": "Argentina",
+    "ground_truth": {
+      "role_family": "estrategia_cuentas",
+      "seniority": "senior",
+      "ai_level": 0
+    },
+    "case_metadata": {
+      "case_type": "no_ai",
+      "is_ambiguous": false,
+      "notes": "Spanish vacancy. Senior account management. Salesforce is not AI. ai_level=0."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-044",
+    "raw_title": "Creative AI Producer",
+    "raw_description": "Produce AI-generated campaigns from concept to final delivery. You will direct AI image and video generation, write detailed prompts, QA outputs for brand consistency, and brief clients on AI creative possibilities. This is a fully AI-native production role — no traditional design software required.",
+    "raw_requirements": "Experience directing AI creative production. Midjourney, Stable Diffusion, Runway ML required. Client-facing experience. Brand sensibility.",
+    "company_name": "AI Agency PE",
+    "country": "Peru",
+    "ground_truth": {
+      "role_family": "creatividad_diseno",
+      "seniority": "senior",
+      "ai_level": 3
+    },
+    "case_metadata": {
+      "case_type": "ai_as_primary_requirement",
+      "is_ambiguous": false,
+      "notes": "Fully AI-native creative role. ai_level=3."
+    }
+  },
+  {
+    "vacancy_id": "GOLD-045",
+    "raw_title": "Marketing Data Analyst",
+    "raw_description": "Analyze marketing performance data, build dashboards, and generate insights to optimize campaigns. Use Google Analytics 4, Looker Studio, and SQL. Apply machine learning models from the data team to predict customer LTV and churn. No content creation involved.",
+    "raw_requirements": "3+ years marketing analytics. SQL mandatory. Python a plus. Looker or Tableau. Familiarity with ML model outputs.",
+    "company_name": "E-commerce MX",
+    "country": "Mexico",
+    "ground_truth": {
+      "role_family": "marketing_growth",
+      "seniority": "senior",
+      "ai_level": 2
+    },
+    "case_metadata": {
+      "case_type": "ambiguous_ai_reference",
+      "is_ambiguous": true,
+      "notes": "Uses ML model outputs but doesn't build them. is_ambiguous because applying ML outputs is not the same as using generative AI tools. ai_level=2."
+    }
+  }
+]

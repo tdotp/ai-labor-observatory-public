@@ -140,11 +140,15 @@ ai-labor-observatory/
 │   └── weekly_report.py     # Summary generation
 ├── validation/              # Data quality
 │   ├── batch_validator.py   # Batch-level checks
+│   ├── taxonomy_validator.py  # Strict taxonomy enum validation (V2)
 │   └── drift_detector.py    # Distribution change detection
+├── evaluation/              # Classifier evaluation (V2)
+│   └── classifier_eval.py   # Gold set metrics: macro-F1, per-class P/R/F1
 ├── analysis/                # Insight generation
 ├── data/
 │   ├── taxonomies/          # Classification schema (role families, skills)
-│   └── synthetic/           # Fictional vacancies for local demos
+│   ├── synthetic/           # Fictional vacancies for local demos
+│   └── gold_set/            # 45 synthetic labeled vacancies for evaluation (V2)
 ├── prompts/                 # LLM prompt templates (versioned)
 ├── migrations/              # Database schema migrations
 ├── scripts/                 # Operational scripts (cron guard, retry, validator)
@@ -173,11 +177,25 @@ This project uses [NIST AI RMF 1.0](https://www.nist.gov/system/files/documents/
 ## Running tests
 
 ```bash
-pip install pytest
+pip install pytest pytest-asyncio httpx tenacity
 pytest tests/ -v
 ```
 
-Tests use mocks — no API credentials required.
+Tests use mocks — no API credentials required. The suite currently has **295 tests, 0 failures**.
+
+To run classifier evaluation against the gold set (no live API required):
+
+```bash
+python - <<'EOF'
+from evaluation.classifier_eval import ClassifierEvaluator, mock_rule_based_predictions
+
+predictions = mock_rule_based_predictions()
+report = ClassifierEvaluator.evaluate(predictions=predictions)
+import json; print(json.dumps(report.to_dict(), indent=2))
+EOF
+```
+
+Expected output includes rule-based baseline metrics (role_family macro-F1 ≈ 0.308, seniority ≈ 0.758, ai_level ≈ 0.314). See [docs/MODEL_EVALUATION.md](docs/MODEL_EVALUATION.md) for interpretation.
 
 ---
 

@@ -70,6 +70,7 @@ Row-level security (RLS) is configured to prevent unauthorized reads and writes.
 **What is included:**
 - `data/taxonomies/` — role family, skill, and search query taxonomies (created by the author, freely publishable)
 - `data/synthetic/` — 50 fictional vacancy records for local testing (no real company names, no real job postings)
+- `data/gold_set/vacancies_gold.json` — 45 synthetic labeled vacancies for classifier evaluation, with rule-based reference labels (created by the author; no real vacancy data)
 - `prompts/` — LLM classification and skill extraction prompts (created by the author)
 - Aggregate statistics cited in the README are sourced from the author's private Supabase instance
 
